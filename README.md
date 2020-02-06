@@ -1,24 +1,11 @@
-# README
+# AlloDoctor
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ce projet consiste a creer une base de donner lien plusieur object de facons differente
 
-Things you may want to cover:
+Installation
 
-* Ruby version
+* bundle install
 
-* System dependencies
+* rails db:migrate
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rails db:seed
