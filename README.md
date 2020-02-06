@@ -20,4 +20,4 @@ Pour naviguer la BDD
 
 `tp City.all`
 
-`tp Specialty.all`
+`tp Speciality.all`
