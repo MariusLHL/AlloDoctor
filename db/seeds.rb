@@ -12,8 +12,10 @@ Appointment.destroy_all
 City.destroy_all
 Speciality.destroy_all
 
-lol = Speciality.create(name: "lol")
-
+lol = 
+5.times do 
+  Speciality.create(name: Faker::Lorem.word)
+end
 10.times do |i|
   City.create(city_name: Faker::Address.city)
   puts i
@@ -33,8 +35,9 @@ end
    zip_code: Faker::Address.zip_code, city: ci)
 end
 
-DoctorSpeciality.create(doctor_id: Doctor.first.id, speciality_id: lol.id)
-
+22.times do
+  DoctorSpeciality.create(doctor_id: Faker::Number.within(range: Doctor.first.id..Doctor.last.id), speciality_id: Faker::Number.within(range: Speciality.first.id..Speciality.last.id))
+end
 
 40.times do |i|
   Patient.create(first_name:  Faker::Name.first_name,
