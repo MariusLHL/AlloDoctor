@@ -9,3 +9,15 @@ Installation
 * rails db:migrate
 
 * rails db:seed
+
+Pour naviguer la BDD
+
+`tp Doctor.all`
+
+`tp Patient.all`
+
+`tp Appointment.all`
+
+`tp City.all`
+
+`tp Specialty.all`
