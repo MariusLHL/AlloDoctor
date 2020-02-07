@@ -45,5 +45,5 @@ end
 end
 
 30.times do |i|
-  Appointment.create(doctor: Doctor.find(Faker::Number.within(range: Doctor.first.id..Doctor.last.id)), patient: Patient.find(Faker::Number.within(range: Patient.first.id..Patient.last.id)),date: Time.now,city: ci )
+  Appointment.create(doctor: Doctor.find(Faker::Number.within(range: Doctor.first.id..Doctor.last.id)), patient: Patient.find(Faker::Number.within(range: Patient.first.id..Patient.last.id)),date: Faker::Time.between(from: DateTime.now, to: DateTime.now + 50),city: ci )
 end
